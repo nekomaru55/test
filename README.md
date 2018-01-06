@@ -1,2 +1,2 @@
-# test
-This is sample page.
+ファイルの更新
+日本語はOK？ってテキストだから関係ないか。
