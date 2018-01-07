@@ -7,7 +7,6 @@ using System.Windows.Forms;
 namespace Sample {
     static class Program {
         #region --- [ Logger ] ---
-        //! ログコントロール
         static ILog m_ctrlLogger = LogManager.GetLogger(
             MethodBase.GetCurrentMethod().DeclaringType);
         #endregion

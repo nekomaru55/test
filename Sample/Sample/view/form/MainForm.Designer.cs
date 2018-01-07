@@ -24,12 +24,21 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            this.btnMessage = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnMessage
+            // 
+            resources.ApplyResources(this.btnMessage, "btnMessage");
+            this.btnMessage.Name = "btnMessage";
+            this.btnMessage.UseVisualStyleBackColor = true;
+            this.btnMessage.Click += new System.EventHandler(this.btnMessage_Click);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnMessage);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MainForm";
@@ -38,5 +47,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnMessage;
     }
 }
