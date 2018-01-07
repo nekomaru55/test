@@ -117,10 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="COM_MSG_TITLE_INFO" xml:space="preserve">
+  <data name="APP_MSG_SYSTEM_ERROR" xml:space="preserve">
+    <value>アプリケーションエラーが発生しました
+&lt;詳細&gt;
+{0}</value>
+  </data>
+  <data name="COM_MSG_DLG_CAPTION_ERROR" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="COM_MSG_DLG_CAPTION_EXCEPTION" xml:space="preserve">
+    <value>例外</value>
+  </data>
+  <data name="COM_MSG_DLG_CAPTION_INFO" xml:space="preserve">
     <value>情報</value>
   </data>
-  <data name="FORM_MSG_SAMPLE" xml:space="preserve">
-    <value>サンプルメッセージ</value>
+  <data name="MAIN_FORM_MSG_CONNECT_ERROR" xml:space="preserve">
+    <value>通信処理に失敗しました
+&lt;詳細&gt;
+{0}</value>
   </data>
 </root>
