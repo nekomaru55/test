@@ -10,9 +10,6 @@ namespace Sample {
         static ILog m_ctrlLogger = LogManager.GetLogger(
             MethodBase.GetCurrentMethod().DeclaringType);
         #endregion
-        /// <summary>
-        /// アプリケーションのメイン エントリ ポイントです。
-        /// </summary>
         [STAThread]
         static void Main() {
             m_ctrlLogger.Info("Start Application.");
@@ -22,6 +19,10 @@ namespace Sample {
                 Application.Run(new MainForm());
             } catch (Exception ex) {
                 m_ctrlLogger.Fatal(ex);
+                MessageBox.Show(string.Format(Properties.Resources.APP_MSG_SYSTEM_ERROR, ex.Message),
+                    Properties.Resources.COM_MSG_DLG_CAPTION_EXCEPTION,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             } finally {
                 m_ctrlLogger.Info("End Application.");
             }

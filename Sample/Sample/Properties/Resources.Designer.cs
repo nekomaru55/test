@@ -61,20 +61,51 @@ namespace Sample.Properties {
         }
         
         /// <summary>
-        ///   Information に類似しているローカライズされた文字列を検索します。
+        ///   Application error
+        ///&lt;Detail&gt;
+        ///{0} に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string COM_MSG_TITLE_INFO {
+        public static string APP_MSG_SYSTEM_ERROR {
             get {
-                return ResourceManager.GetString("COM_MSG_TITLE_INFO", resourceCulture);
+                return ResourceManager.GetString("APP_MSG_SYSTEM_ERROR", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   This is sample message. に類似しているローカライズされた文字列を検索します。
+        ///   Error に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string FORM_MSG_SAMPLE {
+        public static string COM_MSG_DLG_CAPTION_ERROR {
             get {
-                return ResourceManager.GetString("FORM_MSG_SAMPLE", resourceCulture);
+                return ResourceManager.GetString("COM_MSG_DLG_CAPTION_ERROR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Exception に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string COM_MSG_DLG_CAPTION_EXCEPTION {
+            get {
+                return ResourceManager.GetString("COM_MSG_DLG_CAPTION_EXCEPTION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Information に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string COM_MSG_DLG_CAPTION_INFO {
+            get {
+                return ResourceManager.GetString("COM_MSG_DLG_CAPTION_INFO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Connection error
+        ///&lt;Detail&gt;
+        ///{0} に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string MAIN_FORM_MSG_CONNECT_ERROR {
+            get {
+                return ResourceManager.GetString("MAIN_FORM_MSG_CONNECT_ERROR", resourceCulture);
             }
         }
     }
